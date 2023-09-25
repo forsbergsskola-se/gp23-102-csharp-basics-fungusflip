@@ -46,7 +46,7 @@ namespace NimGame
                 // Ai logic om jag blir bättre på det
                 aiChoice = Math.Min(matchesNumber, aiChoice); // number till aichoice
                 matchesNumber -= aiChoice;
-                Console.WriteLine("AI drew " + aiChoice + " matches.");
+                Console.WriteLine($"{new string ('|', matchesNumber)} ({matchesNumber})");
 
                 if (matchesNumber <= 0)
                 {
@@ -57,5 +57,6 @@ namespace NimGame
 
             Console.WriteLine("\nGame Over!");
         }
+        
     }
 }
