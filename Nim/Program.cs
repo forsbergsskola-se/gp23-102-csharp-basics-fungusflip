@@ -12,7 +12,7 @@ namespace NimGame
 
             while (matchesNumber > 0)
             {
-                Console.WriteLine("\nCurrent matches: " + matchesNumber);
+                Console.WriteLine($"{new string ('|', matchesNumber)} ({matchesNumber})");
                 Console.WriteLine("How many matches do you want to draw?");
                 string matchesText = Console.ReadLine();
 
@@ -40,7 +40,7 @@ namespace NimGame
                     break;
                 }
 
-                Console.WriteLine("\nCurrent matches: " + matchesNumber);
+                Console.WriteLine($"{new string ('|', matchesNumber)} ({matchesNumber})");
                 Console.WriteLine("AI's turn...");
 
                 // Ai logic om jag blir bättre på det
